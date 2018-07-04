@@ -1,0 +1,30 @@
+<?xml version=“1.0 
+encoding=“windows-1251” 
+standalone=“yes”?> 
+<Metro> 
+<City> 
+<Moscow id=“1” 
+Name=“Москва”/> 
+<!— Здесь может быть куча разных тегов. К примеру можно добавить: округ, район, наличие авиаузлов и ТПУ и т.д.—> 
+<Line id=“n” 
+color=“<color_of_the_line>” 
+name=“<name_of_the_line>”> 
+<Station id=“n” 
+name=“<name_of_the_station>”
+transfer=“<name_of_the_station>”/> 
+<!— Информацию о станции можно также дополнить такими параметрами как: часы работы; наименование улиц, к которым имеется выход (достопримечательности, парки, объекты социальной сферы) и т.д. —> 
+<Station id=“n+1” 
+name=“<name_of_the_station”>
+<Place id=“n” 
+name=“Выход к Петровскому парку”/> 
+</Station>
+</Line>  
+<Line id=“n+1” 
+color=”<color_of_the_line>” 
+name=“<name_of_the_line>”> 
+<Station id=“n” 
+name=“<name_of_the_station>”> 
+</Line> 
+</Moscow> 
+</City> 
+</Metro>
