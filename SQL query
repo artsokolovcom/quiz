@@ -1,0 +1,68 @@
+/* 
+Название БД не указано. Подразумеваем, что инструкция USE уже пройдена. Имя таблицы устанавливаем в “Supply”. 
+*/ 
+
+SELECT * 
+FROM Supply 
+WHERE YEAR(Date)=2017 
+
+UNION ALL 
+
+SELECT * 
+FROM Supply 
+WHERE ClientName=‘ООО Ромашка’ AND MONTH(Date)=1 AS Month 
+SUM(Amount) AS SumAmount 
+
+UNION ALL 
+
+SELECT * 
+FROM Supply 
+WHERE YEAR(Date)=2017 
+
+UNION ALL 
+
+SELECT * 
+FROM Supply 
+WHERE ClientName=‘ООО Ромашка’ 
+AND MONTH(Date)=2 AS MONTH 
+SUM(Amount) AS SumAmount 
+
+UNION ALL 
+
+SELECT * 
+FROM Supply 
+WHERE YEAR(Date)=2017 
+
+UNION ALL 
+
+SELECT * 
+FROM Supply 
+WHERE ClientName=‘ИП Лютик’ 
+AND MONTH(Date)=1 AS Month 
+SUM(Amount) AS SumAmount 
+
+UNION ALL 
+
+SELECT * 
+FROM Supply 
+WHERE YEAR(Date)=2017 
+
+UNION ALL 
+
+SELECT * 
+FROM Supply 
+WHERE ClientName=‘ИП Лютик’ AND MONTH(Date)=4 AS Month 
+SUM(Amount) AS SumAmount 
+
+UNION ALL 
+
+SELECT * 
+FROM Supply 
+WHERE YEAR(Date)=2017 
+
+UNION ALL 
+
+SELECT * 
+FROM Supply 
+WHERE ClientName=‘ЗАО Тюльпан’ AND MONTH(Date)=6 AS Month 
+SUM(Amount) AS SumAmount
